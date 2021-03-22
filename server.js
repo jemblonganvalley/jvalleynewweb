@@ -6,6 +6,7 @@ const path = require('path')
 const index = require('./routes/index_route')
 const about = require("./routes/about_routes")
 const silabus = require("./routes/silabus_routes")
+const PORT = process.env.PORT || 3000
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -33,4 +34,4 @@ app.use('/silabus', silabus)
 //     })
 // })
 
-app.listen(3000, ()=>{console.log('listen port 3000')})
+app.listen(PORT, ()=>{console.log('listen port 3000')})
