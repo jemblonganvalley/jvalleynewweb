@@ -1,0 +1,41 @@
+<nav class="navbar">
+
+    <h3 class="brand">jvalley</h3>
+    <ul class="menu">
+        <li class="menu_item">
+            <a href="/">
+                <span class="fa fa-home"></span>
+            </a>
+        </li>
+        <li class="menu_item">
+            <a href="/silabus">silabus</a>
+        </li>
+        <li class="menu_item">
+            <a href="/daftar">daftar</a>
+        </li>
+        <li class="menu_item">
+            <a href="#beranda-siswa">beranda-siswa</a>
+        </li>
+    </ul>
+
+</nav>
+
+<script>
+
+    let navbar = document.querySelector('.navbar')
+    let nextPos
+    window.onscroll = ()=>{
+        let prevPos = window.pageYOffset
+        if(nextPos <= prevPos){
+            // navbar.style.backgroundColor = 'white'
+            gsap.to('.navbar', {y : "-70px", delay : "0.2"})
+        }else{
+            // navbar.style.backgroundColor = 'whiteSmoke'
+            gsap.to('.navbar', {y : "0", delay : "0.5"})
+
+        }
+
+        nextPos = prevPos
+
+    }
+</script>

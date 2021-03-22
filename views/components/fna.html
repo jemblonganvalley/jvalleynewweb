@@ -1,0 +1,48 @@
+
+<aside class="fna" id="fna">
+    
+    <span class="fa fa-question" id="quest_button" onclick="showFna()"></span>
+    
+    <div class="jawaban">
+        <h3 class="fna_quest">
+            Apa ini beneran Gratis bang..?
+        </h3>
+        <p class="fna_answer">
+            Yak beneran gratis, kalo ngak caya, check aja <a href="/">comment</a> dari mantan murid disini..
+        </p>
+    </div>
+    
+    <div class="jawaban">
+        <h3 class="fna_quest">
+            Tempatnya dimana bang..?
+        </h3>
+        <p class="fna_answer">
+            Kita ada di Depok Jawabarat, check <a href="/">dimari</a>
+        </p>
+    </div>
+    
+</aside>
+<div class="fna_background">
+</div>
+
+<script>
+
+    let qs = document.getElementById('quest_button')
+    let fna = document.getElementById('fna')
+    let section_fna = document.querySelector('.fna_background')
+    let hide = true
+    const showFna = ()=>{
+        if(hide){
+            gsap.to('.fna', {x : "0"})
+            fna.style.boxShadow = '-4px 0px 8px rgba(0,0,0,0.2)'
+            section_fna.style.display = 'initial'
+            hide = false
+        }else{
+            gsap.to('.fna', {x : "100%"})
+            fna.style.boxShadow = 'none'
+            section_fna.style.display = 'none'
+            hide = true
+        }
+    }
+
+</script>

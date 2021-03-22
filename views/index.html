@@ -1,0 +1,60 @@
+
+{{>fna}}
+
+<main class="home">
+
+    <div class="hero">
+        <h1 class="wellcome_text">
+            Selamat datang di..
+        </h1>
+        <h1 class="wellcome_text">
+            <span class="orange_block"></span>
+            JVALLEY
+        </h1>
+        <h1 class="wellcome_text">
+            Kursus Pemograman Web & App <strong>Gratis</strong>
+        </h1>
+    </div>
+
+    <section class="home_content">
+        
+        <div class="image_home1"></div>
+        <p>
+            JVALLEY merupakan sebuah lembaga yang mengadakan kursus pemograman WEB dan APP gratis,
+            kami terletak di Depok Jawabarat
+        </p>
+        <div class="image_home2">
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, vero! Explicabo a dolor quia debitis aut! Dolorum temporibus nesciunt, fuga veritatis autem totam, nulla tempore inventore ducimus officia molestiae quam?
+        </p>
+
+        <div class="materi">
+            <span class="fab fa-html5"></span>
+            <span class="fab fa-css3"></span>
+            <span class="fab fa-js-square"></span>
+        </div>
+
+    </section>
+
+
+
+</main>
+
+<script>
+
+    gsap.from('.wellcome_text', {
+        y : '-50',
+        duration : 1,
+        autoAlpha : 0,
+        stagger : 0.25
+    })
+
+    gsap.from('.image_home1', {
+        y : '-50', 
+        duration : 2, 
+        autoAlpha : 0,
+        delay : .5
+    })
+
+</script>
